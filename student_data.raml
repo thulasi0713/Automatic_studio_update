@@ -10,7 +10,7 @@ types:
         required: true
       place?:
         type: string
-      phoneNumber:
+      phoneNumber?:
         type: integer
         required: true
   addStudRes:
@@ -28,8 +28,8 @@ types:
         example:
           {
             "AccountName": "Hema",
-            "city?": "hyd",
-            "mobile": 124567
+            "city": "hyd",
+            "phoneNumber": 124567
           }
     responses:
       201:
